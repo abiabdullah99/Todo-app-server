@@ -73,7 +73,7 @@ async function run() {
       const query = req.body;
       const tasks = await completeTask.insertOne(query);
       res.send(tasks);
-    });
+    })
   } finally {
   }
 }
