@@ -59,7 +59,7 @@ async function run() {
       const query = req.body;
       const tasks = await TaskCollection.insertOne(query);
       res.send(tasks);
-    });
+    })
 
     // Get All Task
     app.get("/complete", async (req, res) => {
